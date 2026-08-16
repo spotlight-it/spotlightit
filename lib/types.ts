@@ -17,7 +17,7 @@ export interface Creator {
   contact_email: string | null;
   claim_token: string;
   created_at: string;
-  niches?: Niche | null;
+  niches?: Niche[] | null;
 }
 
 export interface Support {
