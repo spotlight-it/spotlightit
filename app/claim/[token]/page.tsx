@@ -45,7 +45,7 @@ export default async function ClaimPage({
       )}
 
       <div className="card">
-        <div className="niche-tag">{creator.niches?.name}</div>
+        <div className="niche-tag">{creator.niches?.[0]?.name}</div>
         <h2 style={{ margin: "8px 0 4px" }}>{creator.name}</h2>
         <p style={{ color: "#6b6478", marginBottom: 4 }}>
           @{creator.instagram_handle}
