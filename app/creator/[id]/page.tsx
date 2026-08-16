@@ -40,7 +40,7 @@ export default async function CreatorProfilePage({
   return (
     <div>
       <div className="profile-header">
-        {c.niches?.name && <div className="niche-tag">{c.niches.name}</div>}
+        {c.niches?.[0]?.name && <div className="niche-tag">{c.niches?.[0]?.name}</div>}
         <h1>{c.name}</h1>
         <p style={{ color: "#6b6478" }}>{c.bio}</p>
         <a
