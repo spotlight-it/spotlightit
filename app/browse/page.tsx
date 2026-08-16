@@ -81,8 +81,8 @@ export default async function BrowsePage({
               <div>
                 <div className="name">{c.name}</div>
                 <div className="handle">@{c.instagram_handle}</div>
-                {c.niches?.name && (
-                  <div className="niche-tag">{c.niches.name}</div>
+                {c.niches?.[0]?.name && (
+                  <div className="niche-tag">{c.niches?.[0]?.name}</div>
                 )}
               </div>
               <span className="btn secondary" style={{ padding: "8px 14px" }}>
